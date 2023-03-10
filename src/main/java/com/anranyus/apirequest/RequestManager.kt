@@ -1,8 +1,8 @@
-package com.anranyus.neteasecloudmusicapi
+package com.anranyus.apirequest
 
-import com.anranyus.neteasecloudmusicapi.model.PlaylistSongItem
-import com.anranyus.neteasecloudmusicapi.model.QRCodeInfo
-import com.anranyus.neteasecloudmusicapi.store.CookieStore
+import com.anranyus.apirequest.model.PlaylistSongItem
+import com.anranyus.apirequest.model.QRCodeInfo
+import com.anranyus.apirequest.store.CookieStore
 
 class RequestManager {
     companion object{

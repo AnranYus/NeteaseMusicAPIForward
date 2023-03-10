@@ -1,8 +1,8 @@
-package com.anranyus.neteasecloudmusicapi
+package com.anranyus.apirequest
 
-import com.anranyus.neteasecloudmusicapi.model.Playlist
-import com.anranyus.neteasecloudmusicapi.model.PlaylistItem
-import com.anranyus.neteasecloudmusicapi.model.PlaylistSongItem
+import com.anranyus.apirequest.model.Playlist
+import com.anranyus.apirequest.model.PlaylistItem
+import com.anranyus.apirequest.model.PlaylistSongItem
 
 
 class PlaylistService : BaseService(){

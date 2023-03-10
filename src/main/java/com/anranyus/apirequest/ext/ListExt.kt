@@ -1,4 +1,4 @@
-package com.anranyus.neteasecloudmusicapi.ext
+package com.anranyus.apirequest.ext
 
 import java.util.stream.Collectors
 import kotlin.reflect.KProperty1

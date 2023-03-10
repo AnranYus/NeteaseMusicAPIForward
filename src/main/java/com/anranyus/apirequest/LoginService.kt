@@ -1,10 +1,10 @@
-package com.anranyus.neteasecloudmusicapi
+package com.anranyus.apirequest
 
-import com.anranyus.neteasecloudmusicapi.model.Key
-import com.anranyus.neteasecloudmusicapi.model.QRCode
-import com.anranyus.neteasecloudmusicapi.model.QRCodeInfo
-import com.anranyus.neteasecloudmusicapi.model.QRCodeStatusInfo
-import com.anranyus.neteasecloudmusicapi.store.CookieStore
+import com.anranyus.apirequest.model.Key
+import com.anranyus.apirequest.model.QRCode
+import com.anranyus.apirequest.model.QRCodeInfo
+import com.anranyus.apirequest.model.QRCodeStatusInfo
+import com.anranyus.apirequest.store.CookieStore
 import com.google.gson.Gson
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

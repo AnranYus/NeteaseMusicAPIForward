@@ -1,6 +1,6 @@
-package com.anranyus.neteasecloudmusicapi
+package com.anranyus.apirequest
 
-import com.anranyus.neteasecloudmusicapi.store.CookieStore
+import com.anranyus.apirequest.store.CookieStore
 import com.google.gson.Gson
 import okhttp3.*
 

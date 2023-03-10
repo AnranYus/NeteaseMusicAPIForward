@@ -1,4 +1,4 @@
-package com.anranyus.neteasecloudmusicapi.model
+package com.anranyus.apirequest.model
 
 import com.google.gson.annotations.SerializedName
 

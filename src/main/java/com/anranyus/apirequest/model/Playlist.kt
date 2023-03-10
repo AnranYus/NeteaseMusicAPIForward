@@ -1,4 +1,4 @@
-package com.anranyus.neteasecloudmusicapi.model
+package com.anranyus.apirequest.model
 
 class Playlist(val playlist: List<PlaylistItem>)
 class Creator(val province:String,val followed:Boolean,val avatarUrl:String,

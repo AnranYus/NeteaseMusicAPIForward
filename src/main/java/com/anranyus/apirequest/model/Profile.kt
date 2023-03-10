@@ -1,4 +1,4 @@
-package com.anranyus.neteasecloudmusicapi.model
+package com.anranyus.apirequest.model
 
 data class Profile(val userId:String,val userType:Int,val nickName:String,val avatarImgId:Long,
                    val avatarUrl:String,val backgroundImgId:Long,val backgroundUrl:String,val signature:String,

@@ -1,7 +1,7 @@
-package com.anranyus.neteasecloudmusicapi
+package com.anranyus.apirequest
 
-import com.anranyus.neteasecloudmusicapi.model.Account
-import com.anranyus.neteasecloudmusicapi.model.AccountInfo
+import com.anranyus.apirequest.model.Account
+import com.anranyus.apirequest.model.AccountInfo
 
 class UserService: BaseService() {
 

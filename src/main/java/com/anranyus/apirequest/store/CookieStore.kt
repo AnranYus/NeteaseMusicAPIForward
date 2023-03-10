@@ -1,4 +1,4 @@
-package com.anranyus.neteasecloudmusicapi.store
+package com.anranyus.apirequest.store
 
 /**
  * cookie默认以HashMap形式储存于内存中，若要持久化储存cookie，则应使用[CookieStore.setCookieEvent].

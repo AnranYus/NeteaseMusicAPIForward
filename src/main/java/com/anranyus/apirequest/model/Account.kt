@@ -1,4 +1,4 @@
-package com.anranyus.neteasecloudmusicapi.model
+package com.anranyus.apirequest.model
 
 data class Account(val account: AccountInfo)
 data class AccountInfo(val id:String,val username:String,val type:Int,val status:Int,

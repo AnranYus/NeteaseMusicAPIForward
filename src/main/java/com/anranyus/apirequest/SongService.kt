@@ -1,6 +1,6 @@
-package com.anranyus.neteasecloudmusicapi
+package com.anranyus.apirequest
 
-import com.anranyus.neteasecloudmusicapi.model.Song
+import com.anranyus.apirequest.model.Song
 import java.lang.StringBuilder
 
 class SongService: BaseService() {
