@@ -4,24 +4,10 @@ import com.anranyus.neteasecloudmusicapi.store.CookieStore
 import com.google.gson.Gson
 import okhttp3.*
 
-abstract class BaseService {
-    open val BASE_URL = RequestManager.baseUrl//Test
+open class BaseService {
 
-    private val client = OkHttpClient().newBuilder()
-    val cookieStore = CookieStore()
     protected val gson = Gson()
-    init {
-        client.cookieJar(object : CookieJar {
-            override fun loadForRequest(url: HttpUrl): List<Cookie> {
-                return cookieStore.get(url.host) ?: emptyList()
-            }
-
-            override fun saveFromResponse(url: HttpUrl, cookies: List<Cookie>) {
-                cookieStore.put(url.host,cookies)
-            }
-
-        })
-    }
+    private val client = OkHttpClient()
 
     /**
      * @param requestUrl 请求Api地址
@@ -29,9 +15,9 @@ abstract class BaseService {
      * @param cookie 请求头cookie def=null
      * @param params 请求附带参数
      */
-    fun request(requestUrl:String,key:String?,vararg params:Pair<String,String>):String?{
+    fun request(requestUrl:String,key:String?,vararg params:Pair<String,String>):String{
         val url = StringBuffer()
-        url.append("$BASE_URL$requestUrl?timestamp=${System.currentTimeMillis()}")
+        url.append("${RequestManager.getBaseUrl()}${requestUrl}?timestamp=${System.currentTimeMillis()}")
 
         params.forEach{
             url.append("&${it.first}=${it.second}")
@@ -41,10 +27,14 @@ abstract class BaseService {
             url.append("&key=${key}")
         }
         val request = Request.Builder().apply {
+            val cookie = CookieStore.load(RequestManager.getHost())
+            println(cookie)
+            if (cookie!=null){
+                addHeader("cookie", cookie)
+            }
             url(url.toString())
         }.build()
 
-
-        return client.build().newCall(request).execute().body?.string()
+        return client.newCall(request).execute().body.string()
     }
 }
