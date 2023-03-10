@@ -1,7 +1,7 @@
 plugins {
     id ("java-library")
 }
-if(repositories.isEmpty()){
+if(allprojects.isEmpty()){
     repositories {
         mavenCentral()
     }
